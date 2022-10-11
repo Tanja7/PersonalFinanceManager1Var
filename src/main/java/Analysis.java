@@ -61,7 +61,7 @@ public class Analysis {
         var category = categories.getCategoryByName(analysis.getTitle());
 
         // суммировать покупки по категориям и найти максимальную
-        categories.addSumByCategory(category, analysis.getSum());
+        categories.addSumByCategory(category.getCategory(), analysis.getSum());
        return toJson();
     }
     public String toJson() {
